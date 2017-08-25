@@ -1,0 +1,596 @@
+html,
+body {
+  background: #f7f7f7;
+  height: 100%;
+  letter-spacing: 1px;
+}
+ul,
+li,
+ol,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-indent: 0;
+}
+input,
+textarea,
+button {
+  outline: none;
+  resize: none;
+}
+input:focus,
+textarea:focus,
+button:focus,
+input:active,
+textarea:active,
+button:active,
+input:link,
+textarea:link,
+button:link {
+  outline: none;
+}
+.h100 {
+  height: 100%;
+}
+.color-gay {
+  color: #cecece;
+}
+.btn {
+  width: 2.84rem;
+  height: .86rem;
+  font-size: .3rem;
+  border: none;
+  -webkit-tap-highlight-color: none;
+  outline: none;
+}
+.btn:active,
+.btn:focus,
+.btn:link {
+  border: none;
+  outline: none;
+}
+.btn.btn-primary {
+  background: #32a0f0;
+  border: none;
+}
+.btn.btn-warning {
+  background: #efb024;
+  border: none;
+}
+.mgL70 {
+  margin-left: 0.70rem;
+}
+.padV50 {
+  padding: 0.50rem 0;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  /*    &:after{ 
+                  content:"";width:.48rem;height:.48rem;position:absolute;top:-0.05rem;left:-0.05rem;background:#fff;
+                  border-radius:50%;border:@borderblur;z-index:10;
+                 } */
+}
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+  /*  pointer-events: auto;
+    &:after{
+      background:@bgblur; pointer-events: auto;
+    }
+    &:before{ pointer-events: auto;
+      content:"";width:.48rem;height:.48rem;position:absolute;top:-0.05rem;left:-0.05rem;z-index:20;
+      background:url("@{src}/content/images/dg.png") no-repeat 50% 50%;
+      background-size:0.32rem 0.22rem;
+    } */
+}
+/* 列表 */
+.MenuList {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  font-size: .30rem;
+}
+.MenuList .MenuListBox {
+  overflow: hidden;
+  border-top: .4rem solid #fff;
+  background: #fff;
+}
+.MenuList .MenuListBox li {
+  padding-left: .32rem;
+}
+.MenuList .MenuListBox .MenuListBoxLeft {
+  float: left;
+  width: 2.00rem;
+  background: #F7F7F7;
+  height: 8.00rem;
+}
+.MenuList .MenuListBox .MenuListBoxLeft li {
+  height: .72rem;
+  line-height: .72rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.MenuList .MenuListBox .MenuListBoxLeft li.active {
+  background: #fff;
+}
+.MenuList .MenuListBox .MenuListBoxLeft li.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .02rem;
+  height: 100%;
+  background: #32a0f0;
+}
+.MenuList .MenuListBox .MenuListBoxRight {
+  float: left;
+  height: 8.00rem;
+}
+.MenuList .MenuListBox .MenuListBoxRight li {
+  height: .60rem;
+  line-height: .60rem;
+}
+/* 生日祝福 */
+.postcard {
+  width: 6.90rem;
+  min-height: 9.39rem;
+  background: #fff url("http://114.251.168.251:28286/birthday/content/images/bg2.png") no-repeat left top;
+  background-size: 6.90rem 2.48rem;
+  padding-top: 2.98rem;
+  /*   .postcard-ul{ display:flex;flex-wrap: wrap; height:6rem; 
+      li{
+        width:2.30rem;height:3rem;text-align:center;
+        .label{position: relative;top:0;left:0;display:inline-block;text-align:center;margin:0;width:2.20rem;margin:0 auto;
+            span{ display: inline-block;border-radius:50%;overflow:hidden;width:1.48rem;height:1.48rem;
+                img{ width:1.48rem;height:1.48rem;}
+                }
+              input[type='radio'],input[type='checkbox']{
+                right:0.5rem;border:none;top:0.05rem;
+              }
+
+              
+              &:after{ 
+                content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;background:#fff;
+                border-radius:50%;border:@borderblur;z-index:10;
+               }
+             
+           
+            }
+              p{ text-align: center;margin:0;font-size:0.28rem;
+                  &.postcard-ul-txt{margin-top:.10rem}
+                  &.postcard-ul-txtDate{ margin-top:.10rem;color:@bgec;}
+               }
+
+               &.active{
+                 .label{
+                    &:after{
+                      background:@bgblur; pointer-events: auto;
+                    }
+                    &:before{ pointer-events: auto;
+                      content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;z-index:20;
+                      background:url("@{src}/content/images/dg.png") no-repeat 50% 50%;
+                      background-size:0.32rem 0.22rem;
+                    }
+                 }
+               
+               }
+
+
+
+        }          
+      
+  } */
+}
+.postcard .postcard-scrollbox {
+  overflow: hidden;
+  height: 6rem;
+  overflow-x: scroll;
+}
+.postcard .postcard-ul {
+  white-space: nowrap;
+}
+.postcard .postcard-ul > li {
+  width: 6.9rem;
+  height: 6rem;
+  display: inline-block;
+}
+.postcard .postcard-ul > li ul {
+  width: 6.9rem;
+  height: 6rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.postcard .postcard-ul > li ul li {
+  width: 2.30rem;
+  height: 3rem;
+  text-align: center;
+}
+.postcard .postcard-ul > li ul li .label {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 2.20rem;
+  margin: 0 auto;
+}
+.postcard .postcard-ul > li ul li .label span {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 1.48rem;
+  height: 1.48rem;
+}
+.postcard .postcard-ul > li ul li .label span img {
+  width: 1.48rem;
+  height: 1.48rem;
+}
+.postcard .postcard-ul > li ul li .label input[type='radio'],
+.postcard .postcard-ul > li ul li .label input[type='checkbox'] {
+  right: 0.5rem;
+  border: none;
+  top: 0.05rem;
+}
+.postcard .postcard-ul > li ul li .label:after {
+  content: "";
+  width: .48rem;
+  height: .48rem;
+  position: absolute;
+  top: 0rem;
+  right: 0.32rem;
+  background: #fff;
+  border-radius: 50%;
+  border: #32a0f0 solid 0.01rem;
+  z-index: 10;
+}
+.postcard .postcard-ul > li ul li p {
+  text-align: center;
+  margin: 0;
+  font-size: 0.28rem;
+}
+.postcard .postcard-ul > li ul li p.postcard-ul-txt {
+  margin-top: 0.1rem;
+}
+.postcard .postcard-ul > li ul li p.postcard-ul-txtDate {
+  margin-top: .10rem;
+  color: #cecece;
+}
+.postcard .postcard-ul > li ul li.active .label:after {
+  background: #32a0f0;
+  pointer-events: auto;
+}
+.postcard .postcard-ul > li ul li.active .label:before {
+  pointer-events: auto;
+  content: "";
+  width: .48rem;
+  height: .48rem;
+  position: absolute;
+  top: 0rem;
+  right: 0.32rem;
+  z-index: 20;
+  background: url("http://114.251.168.251:28286/birthday/content/images/dg.png") no-repeat 50% 50%;
+  background-size: 0.32rem 0.22rem;
+}
+.postcard .footer {
+  padding-top: 0.5rem;
+}
+.postcard .footer p.color-gay {
+  padding: 0.40rem 0;
+}
+/* 送礼物 */
+.gift,
+.giftInfo {
+  width: 7.10rem;
+  min-height: 9.39rem;
+  background: #fff url("http://114.251.168.251:28286/birthday/content/images/card.png") no-repeat left top;
+  background-size: 7.10rem auto;
+}
+.gift p,
+.giftInfo p {
+  margin-bottom: 0;
+}
+.gift .gift-content,
+.giftInfo .gift-content {
+  height: 7.93rem;
+  padding-top: 1.90rem;
+  text-align: center;
+}
+.gift .gift-content p.gift-img,
+.giftInfo .gift-content p.gift-img {
+  height: 2.78rem;
+}
+.gift .gift-content img,
+.giftInfo .gift-content img {
+  max-height: 2.78rem;
+}
+.gift .gift-content .gift-txt,
+.giftInfo .gift-content .gift-txt {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 5.52rem;
+  margin: 0 auto;
+  -webkit-text-stroke-width: 0.002rem;
+  -webkit-font-smoothing: antialiased;
+  font-size: .30rem;
+}
+.gift .gift-content .gift-txt .gift-txt-edit,
+.giftInfo .gift-content .gift-txt .gift-txt-edit {
+  position: relative;
+  z-index: 10;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: 5.52rem;
+  height: 1.30rem;
+  line-height: 0.6rem;
+}
+.gift .gift-content .gift-txt .gift-btn-spanEdit,
+.giftInfo .gift-content .gift-txt .gift-btn-spanEdit {
+  position: absolute;
+  top: .48rem;
+  right: 0;
+  color: #878787;
+  z-index: 15;
+}
+.gift .gift-content .gift-txt::before,
+.giftInfo .gift-content .gift-txt::before,
+.gift .gift-content .gift-txt:after,
+.giftInfo .gift-content .gift-txt:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.02rem;
+  background: #ff0607;
+  z-index: 1;
+}
+.gift .gift-content .gift-txt:before,
+.giftInfo .gift-content .gift-txt:before {
+  width: 5.52rem;
+  top: 1rem;
+}
+.gift .gift-content .gift-txt:after,
+.giftInfo .gift-content .gift-txt:after {
+  width: 4.18rem;
+  top: 1.77rem;
+  left: 50%;
+  margin-left: -2.09rem;
+}
+.gift .gift-footer,
+.giftInfo .gift-footer {
+  width: 7.10rem;
+  margin: 0 auto;
+}
+.gift .gift-footer .gift-scrollBox,
+.giftInfo .gift-footer .gift-scrollBox {
+  margin: .35rem 0;
+  overflow: hidden;
+  background: #fff;
+  height: 1.20rem;
+}
+.gift .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide,
+.giftInfo .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide {
+  width: 1.28rem;
+  height: 1.13rem;
+  margin-right: 0;
+  text-align: center;
+}
+.gift .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide a,
+.giftInfo .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide a {
+  display: inline-block;
+  width: 1.28rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  height: 1.13rem;
+  background: #f5f5f5;
+  border: #e6e6e6 solid 0.01rem;
+}
+.gift .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide a img,
+.giftInfo .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide a img {
+  height: 0.70rem;
+}
+.gift .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide.active a,
+.giftInfo .gift-footer .gift-scrollBox .swiper-wrapper .swiper-slide.active a {
+  border-color: #32a0f0;
+}
+.gift .gift-footer .btn-primary,
+.giftInfo .gift-footer .btn-primary {
+  width: 6.9rem;
+}
+.giftInfo .giftInfo-footer {
+  text-align: center;
+  padding-top: 1rem;
+}
+.giftInfo .giftInfo-footer .giftInfo-user {
+  display: inline-block;
+  width: 1.48rem;
+  height: 1.48rem;
+  border-radius: 50%;
+  border: #c00 solid 1px;
+  overflow: hidden;
+}
+.giftInfo .giftInfo-footer .giftInfo-user img {
+  width: 1.48rem;
+  height: 1.48rem;
+}
+.giftInfo .giftInfo-footer .giftInfo-name {
+  font-size: .28rem;
+}
+/* 红包 */
+.longCoinRed {
+  margin: 0 -15px;
+  background: url("http://114.251.168.251:28286/birthday/content/images/bg1.png") no-repeat center bottom;
+  background-size: 7.50rem 2.30rem;
+}
+.longCoinRed p {
+  margin-bottom: 0;
+}
+.longCoinRed .longCoinRedHeader {
+  height: 4rem;
+  background: url("http://114.251.168.251:28286/birthday/content/images/Bitmap.png") no-repeat 50% 0%;
+  background-size: 8.24rem 6.17rem;
+  background-position-y: -3.44rem;
+  text-align: center;
+  padding-top: 1.60rem;
+}
+.longCoinRed .longCoinRedHeader .longcoinRedUser {
+  display: inline-block;
+  width: 1.50rem;
+  height: 1.50rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: #fff solid 0.02rem;
+}
+.longCoinRed .longCoinRedHeader .longcoinRedUser img {
+  width: 1.50rem;
+}
+.longCoinRed .longCoinRedHeader .longcoinRedUserName {
+  font-size: .36rem;
+  margin-top: 0.2rem;
+}
+.longCoinRed .longcoinRedcontent {
+  text-align: center;
+  vertical-align: top;
+}
+.longCoinRed .longcoinRedcontent .longCoinRedTxt {
+  padding: .50rem 0 1rem 0;
+}
+.longCoinRed .longcoinRedcontent span {
+  font-size: 1rem;
+  display: inline-block;
+  background: url("http://114.251.168.251:28286/birthday/content/images/coin.png") no-repeat left center;
+  background-size: .54rem .58rem;
+  padding-left: 0.7rem;
+}
+.longCoinRed .longCoinRedimg img {
+  height: 2.12rem;
+}
+.longCoinRed .longCoinRedFoot {
+  font-size: .32rem;
+  color: #939393;
+  padding-top: .4rem;
+}
+/* 发红包 */
+.postCoin p {
+  margin: 0;
+}
+.postCoin .postCoinContainer .swiper-wrapper {
+  padding: .25rem 0;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide {
+  width: 1.80rem;
+  text-align: center;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide .postCoinBox {
+  display: inline-block;
+  width: 1.44rem;
+  height: 1.27rem;
+  background: #fff;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide .postCoinBox .postCoinNumber {
+  padding-top: .2rem;
+  font-size: .40rem;
+  color: #DD4B4B;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide .postCoinBox .postCointext {
+  font-size: .26rem;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide.action .postCoinBox {
+  background: #32a0f0;
+}
+.postCoin .postCoinContainer .swiper-wrapper .swiper-slide.action .postCoinBox p {
+  color: #fff;
+}
+.postCoin .postCoinList {
+  margin: 0 -15px;
+  background: #fff;
+}
+.postCoin .postCoinList div {
+  overflow: hidden;
+  padding: .30rem 0;
+}
+.postCoin .postCoinList div p {
+  margin: 0 15px;
+}
+.postCoin .postCoinList div p .postCoinListKey {
+  font-size: .30rem;
+  float: left;
+}
+.postCoin .postCoinList div p .postCoinListValue {
+  font-size: .28rem;
+  color: #939393;
+  float: right;
+  max-width: 4rem;
+}
+.postCoin .postCoinList div p .postCoinListValueInput {
+  border: 0;
+  text-align: right;
+}
+.postCoin .postCoinList div:first-child {
+  border-bottom: #e6e6e6 solid 0.01rem;
+}
+.postCoin .postCoinTxt {
+  margin: 0 -15px;
+  background: #fff;
+  margin-top: .30rem;
+  padding: .30rem 0;
+  min-height: 1.66rem;
+}
+.postCoin .postCoinTxt p {
+  margin: 0 15px;
+  font-size: .30rem;
+}
+.postCoin .postCoinTxt textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.postCoin .postCoinBuy {
+  text-align: center;
+  padding: 1.88rem 0;
+}
+.postCoin .postCoinBuy span:first-child {
+  font-size: .32rem;
+  color: #939393;
+  margin-right: .20rem;
+}
+.postCoin .postCoinBuy span:last-child {
+  font-size: 1rem;
+  background: url("http://114.251.168.251:28286/birthday/content/images/coin.png") no-repeat left center;
+  background-size: .54rem .58rem;
+  padding-left: .60rem;
+}
+.postCoin .postCoinFoot {
+  position: fixed;
+  bottom: .3rem;
+  right: 5%;
+  left: 5%;
+}
+.postCoin .postCoinFoot .btn-warning {
+  width: 100%;
+}
+.tootip {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  line-height: 2rem;
+  color: #999;
+  text-align: center;
+}

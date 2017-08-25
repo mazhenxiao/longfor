@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生日祝福</title>
+    <link href="content/script/source/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/script/source/Swiper-3.4.2/css/swiper.min.css" rel=stylesheet />
+    <link href="content/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="iss-alert" class="popover"></div>
+    <article class="container-fluid h100">
+         <!-- <a href="../#/index">首页</a><a href="../#/gift">送礼物</a><a href="../#/giftInfo">礼物详情</a><a href="../#/longCoin">龙币</a>
+        <a href="../#/postCoin">发龙币</a> -->
+ 
+        
+        <section id="MenuList" class="MenuList hide">
+            <article class="MenuListBox">
+                <div class="MenuListBoxLeft" id="MenuListBoxLeft">
+                </div>
+                <div class="MenuListBoxRight" id="MenuListBoxRight">
+                </div>
+            </article>
+        </section>
+        <section id="FloatMenu" class="h100">
+
+            <!-- 生日祝福 -->
+            <!-- <div class="postcard">
+                <ul class="postcard-ul">
+                    <li>
+                        <label>
+                            <span class="clip"><img src="content/images/s1.png" /></span>
+                            <input type="radio" class="radio" name="postcardListImage" />
+                        </label>
+                        <p class="postcard-ul-txt">扬成</p>
+                        <p class="postcard-ul-txtDate">7月7日</p>
+                    </li>    
+                </ul>
+                <footer class="text-center footer">
+                <button id="Event_postBithday" class="btn btn-primary">送上生日祝福</button>
+                <button id="Event_postLongCoin" class="btn tn btn-warning mgL70">发龙币表示一下</button>
+                <p class="text-center color-gay">即将生日的同事会在当天收到祝福</p>
+                </footer>
+            </div> -->
+            <!-- 送礼物 -->
+            <!--   <article class="gift">
+                 <div class="gift-content">
+                     <p class="gift-img"><img src="content/images/Page5B5.png" /></p>
+                     <div class="gift-txt">
+                        <p class="text-left">祝您：</p><span class="gift-btn-spanEdit">(点击可编辑)</span>
+                         <textarea readonly class="gift-txt-edit">生日快乐~</textarea>
+                     </div>
+                 </div>
+                 <footer class="gift-footer">
+                     <div class="swiper-container gift-scrollBox">
+                     <ul class="swiper-wrapper">
+                        <li class="gift-scrollBox-li swiper-slide"><img src="content/images/Page 2.png" /></li>
+                        <li class="gift-scrollBox-li swiper-slide"><img src="content/images/Page 3.png" /></li>
+                        <li class="gift-scrollBox-li swiper-slide"><img src="content/images/Page 4.png" /></li>
+                        <li class="gift-scrollBox-li swiper-slide"><img src="content/images/Page 5.png" /></li>
+                        <li class="gift-scrollBox-li swiper-slide"><img src="content/images/Page 2.png" /></li>
+                     </ul>
+                     </div>
+                     <p class="padV50 text-center">
+                         <button class="btn btn-primary">送出祝福</button>
+                     </p>
+                 </footer>
+            </article> -->
+            <!-- 礼物详情 -->
+            <!-- <article class="gift">
+                 <div class="gift-content">
+                     <p class="gift-img"><img src="content/images/Page5B5.png" /></p>
+                     <div class="gift-txt">
+                        <p class="text-left">祝您：</p><span class="gift-btn-spanEdit">(点击可编辑)</span>
+                         <textarea readonly class="gift-txt-edit">生日快乐~</textarea>
+                     </div>
+                 </div>
+                 <footer class="gift-footer">
+                   
+                   
+                 </footer>
+            </article> -->
+            <!-- 龙币发红包 -->
+            <!-- <article class="longCoinRed">
+           <header class="longCoinRedHeader">
+               <p class="longcoinRedUser"><img src="content/images/s2.png" /></p>
+               <p class="longcoinRedUserName">陆晨露</p>
+           </header>
+           <div class="longcoinRedcontent">
+                 <p class="longCoinRedTxt"><span>2.2</span></p>
+                 <p class="longCoinRedimg">
+                     <img src="content/images/Page5B5.png" />
+                 </p>
+                  <p class="longCoinRedFoot">祝您：生日快乐，好事成双</p>  
+           </div>
+        </article> -->
+            <!-- 发龙币 -->
+            <!-- <article class="postCoin">
+                    <section class="swiper-container postCoinContainer" id="postCoinContainer">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="postCoinBox">
+                                   <p>2.2</p>
+                                   <p>好事成双</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="postCoinBox">
+                                   <p>6.6</p>
+                                   <p>万事顺利</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="postCoinBox">
+                                   <p>16.8</p>
+                                   <p>一路发</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="postCoinBox">
+                                   <p>99.9</p>
+                                   <p>幸福长远</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="postCoinList">
+                        <p><span class="postCoinListKey">单人龙币</span><span class="postCoinListValue">2.2个</span></p>
+                        <p><span class="postCoinListKey">发放人数</span><span class="postCoinListValue">张三、李四、王五 3个人</span></p>
+                    </section>
+                    <section class="postCoinTxt">
+                        <p>祝您：生日快乐，好事成双</p>
+                    </section>
+                    <section class="postCoinBuy">
+                        <p><span>合计</span><span>6.6</span></p>
+                    </section>
+                    <footer class="text-center postCoinFoot">
+                            <button className="btn btn-primary" >送出祝福</button>
+                    </footer>
+            </article> -->
+        </section>
+    </article>
+    <!-- 修改盗汗个 -->
+    <script>
+        /*     !function lxHandle() {
+                var json = {
+                    "btn1": {
+                        "name": "返回",
+                        "icon": "back",
+                        "action": {
+                            "method": "back2history",
+                            "para": ""
+                        }
+                    },
+                    "btn2": {
+                        "name": "保存",
+                        "icon": null,
+                        "action": {
+                            "method": "submitValid",
+                            "para": ""
+                        }
+                    },
+                    "title": "修改团队日历"
+                };
+                console.log(lxbridge);
+                lxbridge.callHandler('resetTitleBar',
+                    { "LONGFOR_NAV": encodeURI(JSON.stringify(json)) }, function (response) {
+    
+                    });
+            }();
+     */
+    var reginarg="";
+            function lxHandle() {
+              
+                var Navigationl = {
+                    "btn1": {
+                        "name": null,
+                        "icon": "back",
+                        "action": {
+                            "method": "back2history",
+                            "para": ""
+                        }
+                    },
+                    "btn3": {
+                        "name": reginarg||"选择地区",
+                        "icon": null,
+                        "action": {
+                            "method": "historyList",
+                            "para": ""
+                        }
+                    },
+                    "title": "生日"
+                };
+                lxbridge.callHandler('resetTitleBar', {
+                    "LONGFOR_NAV": encodeURI(JSON.stringify(Navigationl))
+                }, function (response) {
+                });
+    
+            }
+    
+            function historyList(a){
+                $("#MenuList").toggleClass("hide");
+            }
+        </script>
+    <script src="content/script/source/jquery-3.2.1.min.js"></script>
+    <script src="content/script/source/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="content/script/source/iscroll-4/src/iscroll.js"></script>
+    <script src="content/script/source/Swiper-3.4.2/js/swiper.min.js"></script>
+    <script src="content/script/es6/jquery.cookie.js"></script>
+    <script src="content/script/es6/getUrlParams.js"></script>
+    <script src="content/script/es6/lxjsSdk.js"></script>
+    <script src="content/script/es6/login.js"></script>
+    <script src="content/script/es6/getUrlParams.js"></script>
+    <script src="content/script/dist/script/chunk.js"></script>
+    <script src="content/script/dist/script/main.js"></script>
+
+
+</body>
+
+</html>

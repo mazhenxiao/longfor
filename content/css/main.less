@@ -1,0 +1,328 @@
+@bgf7:#f7f7f7;
+@bgblur:#32a0f0;
+@bgyelow:#efb024;
+@bggay:#878787;
+@bgec:#cecece;
+@bgbay2:#939393;
+@bg5:#f5f5f5;
+@bg7:#F7F7F7;
+@bgred:#ff0607;
+@colorRed:#DD4B4B;
+@fontgay:#c5c5c5;
+@borderblur:#32a0f0 solid 0.01rem;
+@bordergay:#e6e6e6 solid 0.01rem;
+@src:"http://114.251.168.251:28286/birthday";
+html,body{ background:@bgf7;height:100%;letter-spacing:1px;}
+ul,li,ol,input{margin:0;padding:0;list-style:none;text-indent:0;}
+input,textarea,button{ outline: none;resize: none;
+  &:focus,&:active,&:link{ outline: none;}
+
+}
+.h100{ height:100%}
+.color-gay{ color:@bgec}
+.btn{
+  width:2.84rem;height:.86rem;font-size:.3rem;
+  border:none;-webkit-tap-highlight-color:none;
+  outline:none;
+  &:active,&:focus,&:link{border:none;outline:none;}
+   &.btn-primary{
+      background:@bgblur;border:none;
+   }
+    &.btn-warning{
+      background:@bgyelow;border:none;
+    }
+    
+}
+.mgL70{ margin-left:0.70rem;}
+.padV50{ padding:0.50rem 0;}
+ input[type='radio'],input[type='checkbox']{ position: absolute;top:0;right:0;margin:0;padding:0;opacity:0;
+             /*    &:after{ 
+                  content:"";width:.48rem;height:.48rem;position:absolute;top:-0.05rem;left:-0.05rem;background:#fff;
+                  border-radius:50%;border:@borderblur;z-index:10;
+                 } */
+                 
+                 
+
+}
+input[type='radio']:checked,input[type='checkbox']:checked{
+  /*  pointer-events: auto;
+    &:after{
+      background:@bgblur; pointer-events: auto;
+    }
+    &:before{ pointer-events: auto;
+      content:"";width:.48rem;height:.48rem;position:absolute;top:-0.05rem;left:-0.05rem;z-index:20;
+      background:url("@{src}/content/images/dg.png") no-repeat 50% 50%;
+      background-size:0.32rem 0.22rem;
+    } */
+}
+/* 列表 */
+.MenuList{
+   overflow: hidden;position: fixed;top:0;left:0;z-index:100;height:100%;background:rgba(0,0,0,0.3);width:100%;font-size:.30rem;
+   .MenuListBox{ overflow:hidden;border-top:.4rem solid #fff;background:#fff;
+    li{ padding-left:.32rem;}
+      .MenuListBoxLeft{ float:left;width:2.00rem;background:@bg7;height:8.00rem;
+        li{ height:.72rem;line-height:.72rem;position: relative;top:0;left:0;
+          &.active{ background:#fff;
+            &:after{ content:"";position: absolute;top:0;left:0;width:.02rem;height:100%;background:#32a0f0 }
+          }
+         
+        }
+    }
+    .MenuListBoxRight{ float:left;height:8.00rem;
+        li{ height:.60rem;line-height:.60rem;}
+    }
+  }
+   
+
+}
+/* 生日祝福 */
+.postcard{
+  width:6.90rem;min-height:9.39rem;
+   background:#fff url("@{src}/content/images/bg2.png") no-repeat left top;
+  background-size:6.90rem 2.48rem;padding-top:2.98rem;
+  .postcard-scrollbox{overflow:hidden;height:6rem;overflow-x:scroll;}
+  .postcard-ul{
+     white-space: nowrap;
+    
+     &>li{ width:6.9rem; height:6rem;display: inline-block;
+      ul{ width:6.9rem;height:6rem;overflow: hidden; display: flex; flex-wrap:wrap;
+        li{ 
+          width:2.30rem;height:3rem;text-align:center;
+          .label{position: relative;top:0;left:0;display:inline-block;text-align:center;margin:0;width:2.20rem;margin:0 auto;
+              span{ display: inline-block;border-radius:50%;overflow:hidden;width:1.48rem;height:1.48rem;
+                  img{ width:1.48rem;height:1.48rem;}
+                  }
+                input[type='radio'],input[type='checkbox']{
+                  right:0.5rem;border:none;top:0.05rem;
+                }
+  
+                
+                &:after{ 
+                  content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;background:#fff;
+                  border-radius:50%;border:@borderblur;z-index:10;
+                 }
+               
+             
+              }
+                p{ text-align: center;margin:0;font-size:0.28rem;
+                    &.postcard-ul-txt{margin-top:.10rem}
+                    &.postcard-ul-txtDate{ margin-top:.10rem;color:@bgec;}
+                 }
+  
+                 &.active{
+                   .label{
+                      &:after{
+                        background:@bgblur; pointer-events: auto;
+                      }
+                      &:before{ pointer-events: auto;
+                        content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;z-index:20;
+                        background:url("@{src}/content/images/dg.png") no-repeat 50% 50%;
+                        background-size:0.32rem 0.22rem;
+                      }
+                   }
+                 
+                 }
+           
+        }
+      }
+    }
+  }
+/*   .postcard-ul{ display:flex;flex-wrap: wrap; height:6rem; 
+      li{
+        width:2.30rem;height:3rem;text-align:center;
+        .label{position: relative;top:0;left:0;display:inline-block;text-align:center;margin:0;width:2.20rem;margin:0 auto;
+            span{ display: inline-block;border-radius:50%;overflow:hidden;width:1.48rem;height:1.48rem;
+                img{ width:1.48rem;height:1.48rem;}
+                }
+              input[type='radio'],input[type='checkbox']{
+                right:0.5rem;border:none;top:0.05rem;
+              }
+
+              
+              &:after{ 
+                content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;background:#fff;
+                border-radius:50%;border:@borderblur;z-index:10;
+               }
+             
+           
+            }
+              p{ text-align: center;margin:0;font-size:0.28rem;
+                  &.postcard-ul-txt{margin-top:.10rem}
+                  &.postcard-ul-txtDate{ margin-top:.10rem;color:@bgec;}
+               }
+
+               &.active{
+                 .label{
+                    &:after{
+                      background:@bgblur; pointer-events: auto;
+                    }
+                    &:before{ pointer-events: auto;
+                      content:"";width:.48rem;height:.48rem;position:absolute;top:0rem;right:0.32rem;z-index:20;
+                      background:url("@{src}/content/images/dg.png") no-repeat 50% 50%;
+                      background-size:0.32rem 0.22rem;
+                    }
+                 }
+               
+               }
+
+
+
+        }          
+      
+  } */
+      .footer{ padding-top:0.5rem;
+        p.color-gay{ padding:0.40rem 0;}
+      }
+}
+  
+/* 送礼物 */
+.gift,.giftInfo{
+  width:7.10rem;min-height:9.39rem; background:#fff url("@{src}/content/images/card.png") no-repeat left top;
+  background-size:7.10rem auto;
+   p{ margin-bottom:0;  }
+  .gift-content{
+    height:7.93rem;padding-top:1.90rem;text-align: center;
+    p.gift-img{ height:2.78rem  }
+    img{ max-height:2.78rem}
+    .gift-txt{
+        position:relative;top:0;left:0;
+        width:5.52rem;margin:0 auto;-webkit-text-stroke-width:0.002rem;-webkit-font-smoothing: antialiased;
+        font-size:.30rem;
+       
+        .gift-txt-edit{
+          position: relative;z-index:10;resize: none;border:none;background-color:transparent;text-align:center;width:5.52rem;height:1.30rem;
+            line-height:0.6rem;
+        }
+        .gift-btn-spanEdit{ position: absolute;top:.48rem;right:0;color:@bggay;z-index:15; }
+         &::before,&:after{content:"";position: absolute;top:0;left:0;height:0.02rem;background:@bgred;z-index:1  }
+        &:before{
+            width:5.52rem; top:1rem;
+        }
+        &:after{
+             width:4.18rem;top:1.77rem;left:50%;margin-left:-2.09rem;
+        }
+    }
+  
+   
+  }
+  .gift-footer{
+    width:7.10rem;margin:0 auto;
+    
+    .gift-scrollBox{
+       margin:.35rem 0;  overflow: hidden;background:#fff;height:1.20rem;
+       .swiper-wrapper{
+          .swiper-slide{
+            width:1.28rem;height:1.13rem;margin-right:0; text-align: center;
+            a{ display:inline-block;width:1.28rem;line-height:1rem;vertical-align: middle;height:1.13rem;background:@bg5;border:@bordergay;
+              img{
+                height:0.70rem; 
+              }
+            }
+            &.active a{ border-color:@bgblur; }
+          }
+
+       }
+    }
+    .btn-primary{ width:6.90rem}
+  }
+}
+.giftInfo{
+    .giftInfo-footer{
+      text-align: center;padding-top:1rem;
+      .giftInfo-user{
+          display: inline-block;width:1.48rem;height:1.48rem;border-radius:50%;border:#c00 solid 1px;overflow:hidden;
+          img{ width:1.48rem;height:1.48rem;}
+       }
+      .giftInfo-name{ font-size:.28rem;}
+    }
+}
+/* 红包 */
+.longCoinRed{ margin:0 -15px; background:url("@{src}/content/images/bg1.png") no-repeat center bottom;
+  background-size:7.50rem 2.30rem;
+     p{ margin-bottom:0;}
+     .longCoinRedHeader{
+        height:4rem;background:url("@{src}/content/images/Bitmap.png") no-repeat 50% 0%;
+        background-size:8.24rem 6.17rem;
+        background-position-y:-3.44rem;
+        text-align: center;padding-top:1.60rem;
+        .longcoinRedUser{ display: inline-block;width:1.50rem;height:1.50rem;border-radius:50%;overflow: hidden;
+          border:#fff solid 0.02rem;
+          img{ width:1.50rem;}
+        }
+        .longcoinRedUserName{ font-size:.36rem;margin-top:0.20rem}
+     }
+      .longcoinRedcontent{
+        .longCoinRedTxt{
+              padding:.50rem 0 1rem 0;
+        }
+        text-align:center;vertical-align: top;
+        span{ font-size:1rem;display:inline-block;background:url("@{src}/content/images/coin.png") no-repeat left center;background-size:.54rem .58rem;padding-left:.7rem  }
+     
+      }
+      .longCoinRedimg{
+        img{ height:2.12rem;}
+      }
+      .longCoinRedFoot{
+        font-size:.32rem;color:@bgbay2; padding-top:.4rem;
+      }
+
+}
+/* 发红包 */
+.postCoin{
+  p{ margin:0;}
+  .postCoinContainer{
+   .swiper-wrapper{ 
+      padding:.25rem 0;
+      .swiper-slide{ width:1.80rem; text-align:center;
+        .postCoinBox{ 
+          display: inline-block;width:1.44rem;height:1.27rem;background:#fff;
+          .postCoinNumber{ padding-top:.2rem;font-size:.40rem; color:@colorRed;}
+          .postCointext{ font-size:.26rem;}
+        }
+        &.action{
+          .postCoinBox{ background:@bgblur;
+            p{ color:#fff;}
+          }
+        }
+      }
+
+    }
+
+  }
+  .postCoinList{
+    margin:0 -15px; background:#fff;
+    div{ overflow: hidden; padding:.30rem 0;
+       p{
+         margin:0 15px;
+       .postCoinListKey{ font-size:.30rem;float:left}
+       .postCoinListValue{ font-size:.28rem;color:@bgbay2;float:right;max-width:4rem;}
+       .postCoinListValueInput{border: 0;text-align: right;}
+       }
+       &:first-child{ border-bottom:@bordergay}
+     }
+  }
+  .postCoinTxt{ margin:0 -15px; background:#fff;margin-top:.30rem;padding:.30rem 0;min-height:1.66rem;
+    p{ margin:0 15px;font-size:.30rem;}
+    textarea{ width:100%;height:100%;border:none;}
+  }
+  .postCoinBuy{text-align: center;padding:1.88rem 0;
+     span:first-child{ font-size:.32rem;color:@bgbay2;margin-right:.20rem; }
+     span:last-child{ font-size:1rem; background:url("@{src}/content/images/coin.png") no-repeat left center;background-size:.54rem .58rem;padding-left:.60rem;}
+  }
+  .postCoinFoot{
+    position: fixed;
+    bottom:.3rem;
+    right: 5%;
+    left:5%;
+    .btn-warning{ width:100%;}
+  }
+}
+.tootip{
+  position: fixed;
+  z-index:5;
+  top: 50%;
+  width: 100%;
+  line-height: 2rem;
+  color: #999;
+  text-align: center;
+}
